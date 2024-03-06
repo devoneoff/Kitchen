@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="recipes.html">Назад</a>
+        <div class="nav__title">Моя кухня</div>
+        <div class="nav__add">
+            <a href="add.html">
+                <i class='bx bx-plus'></i>
+            </a>
+        </div>
+    </nav>
+    <h1 class="recipeList-title">Плюшки с маком</h1>
+    <section class="recipeFood">
+        <div class="recipeFoodIngrid">
+            <h2>Ингредиенты</h2><span>(12 порций)</span>
+        </div>
+        <table class="table table-bordered tableAllIngrid" border="1">
+            <tr>
+                <th colspan="3" class="titleTableCategory">Для теста</th>
+            </tr>
+            <tr>
+                <td>Мука пшеничная</td>
+                <td>-/+500 г</td>
+                <td class="colorTD"><button data-ingredient-id="1" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Молоко (тёплое)</td>
+                <td>250 мл</td>
+                <td class="colorTD"><button data-ingredient-id="2" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Яйцо</td>
+                <td>1 шт</td>
+                <td class="colorTD"><button data-ingredient-id="3" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Масло сливочное (растопленное)</td>
+                <td>60 г</td>
+                <td class="colorTD"><button data-ingredient-id="4" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Масло растительное</td>
+                <td>1 ст. л. + для смазывания</td>
+                <td class="colorTD"><button data-ingredient-id="5" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Сахар</td>
+                <td>100 г</td>
+                <td class="colorTD"><button data-ingredient-id="6" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Дрожжи сухие быстродей.</td>
+                <td>7 г</td>
+                <td class="colorTD"><button data-ingredient-id="7" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Соль</td>
+                <td>1/2 ч. л.</td>
+                <td class="colorTD"><button data-ingredient-id="8" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="titleTableCategory">Для начинки</th>
+            </tr>
+            <tr>
+                <td>Мак сухой пищевой</td>
+                <td>160 г</td>
+                <td class="colorTD"><button data-ingredient-id="9" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Вода</td>
+                <td>160 мл</td>
+                <td class="colorTD"><button data-ingredient-id="10" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Сахар</td>
+                <td>150 г</td>
+                <td class="colorTD"><button data-ingredient-id="11" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Масло сливочное</td>
+                <td>30 г</td>
+                <td class="colorTD"><button data-ingredient-id="12" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Белок яичный</td>
+                <td>1 шт</td>
+                <td class="colorTD"><button data-ingredient-id="13" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Ванильный сахар</td>
+                <td>1-2 ч. л. (по вкусу)</td>
+                <td class="colorTD"><button data-ingredient-id="14" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="titleTableCategory">Для смазывания плюшек</th>
+            </tr>
+            <tr>
+                <td>Желток</td>
+                <td>1 шт</td>
+                <td class="colorTD"><button data-ingredient-id="15" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+            <tr>
+                <td>Молоко</td>
+                <td>1-2 ч. л.</td>
+                <td class="colorTD"><button data-ingredient-id="16" onclick="toggleIngredientColor(this)">✔</button></td>
+            </tr>
+        </table>
+        <div class="stapRecipe">
+            <div class="stapRecipeItem">
+                <div class="stapNumber">1.</div>
+                <div class="stapText">Приготовим начинку. Мак перед варкой нужно обязательно хорошо промыть. Заливаем его водой, перемешиваем и даём маку осесть на дно. Если мак грязный, ложкой собираем с поверхности мусор. Затем мак промываем через самое мелкое сито.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">2.</div>
+                <div class="stapText">Заливаем чистый мак водой в сотейнике (в пропорции 1:1). Ставим сотейник на плиту, доводим до кипения, снимаем пенку. Прикрываем крышкой, убавляем огонь на минимальный, чтобы едва булькало. Варим до момента, пока вся жидкость не испарится и мак хорошо не распарится. Примерно на это уходит 15-20 минут. Периодически помешиваем, чтобы мак не пригорел.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">3.</div>
+                <div class="stapText">Затем добавляем сливочное масло и продолжаем запаривать мак до момента, пока дно сотейника не останется сухим. На это уходит еще минут 15. Чем лучше впитается жидкость, тем гуще будет маковая начинка.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">4.</div>
+                <div class="stapText">Добавляем сахар, ванильный сахар, перемешиваем и измельчаем мак погружным блендером. Удобнее это делать в высоком мерном стакане. Должна получиться вязкая масса.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">5.</div>
+                <div class="stapText">Добавляем сахар, ванильный сахар, перемешиваем и измельчаем мак погружным блендером. Удобнее это делать в высоком мерном стакане. Должна получиться вязкая масса.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">6.</div>
+                <div class="stapText">Добавляем сахар, ванильный сахар, перемешиваем и измельчаем мак погружным блендером. Удобнее это делать в высоком мерном стакане. Должна получиться вязкая масса.</div>
+            </div>
+            <div class="stapRecipeItem">
+                <div class="stapNumber">7.</div>
+                <div class="stapText">Добавляем сахар, ванильный сахар, перемешиваем и измельчаем мак погружным блендером. Удобнее это делать в высоком мерном стакане. Должна получиться вязкая масса.</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

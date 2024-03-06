@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #fff;
+    padding-bottom: 3rem;
+    /* padding: 65px 25px 50px;
+    overflow: hidden; */
+}
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+nav {
+    display: grid;
+    margin-top: 65px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+nav > * {
+    text-align: center;
+}
+nav > a {
+    color: #EAA065;
+}
+.nav__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.h2Edit {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 1rem;
+}
+.amountIngridList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.amountIngridListLine {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.tableTHIngrid {
+    width: 100%;
+    display: flex;
+}
+.tableTHIngrid span {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.amountStapsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.amountIngridList #amountIngridName1,
+.amountIngridList #amountIngridCost1,
+.amountIngridList #amountIngridName2,
+.amountIngridList #amountIngridCost2,
+.amountStapsList #amountStapsNam1,
+.amountStapsList #amountStapsNam2 {
+    width: 100%;
+}
+.btnSend {
+    width: 100%;
+    background-color: #EAA065;
+    border: none;
+    padding: .5rem 0;
+    border-radius: .6rem;
+    margin-top: 2rem;
+}
+input, select {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.btnSend {
+    width: 50%;
+}
+
+.editButtons {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.btnDelete {
+    background-color: #FF4646;
+}
